@@ -1,0 +1,278 @@
+2025-06-17 00:53:49.664 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 00:53:50.311 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-17 00:53:50.327 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 00:53:50.398 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 41264 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 00:53:50.402 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 00:53:50.404 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 00:53:50.864 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-17 00:53:50.911 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 38472 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 00:53:50.914 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 00:53:50.914 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 00:53:51.844 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-17 00:53:51.862 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:53:51.864 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-17 00:53:51.864 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-17 00:53:51.932 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-17 00:53:51.932 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1468 ms
+2025-06-17 00:53:52.071 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-17 00:53:52.082 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:53:52.084 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-17 00:53:52.084 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-17 00:53:52.093 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@5396eeb1, overflow=false, maxLimit=null, dbType=MYSQL, dialect=null, optimizeJoin=true)]}'
+2025-06-17 00:53:52.094 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-06-17 00:53:52.137 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-17 00:53:52.138 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1178 ms
+2025-06-17 00:53:52.280 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@5e85c21b, overflow=false, maxLimit=null, dbType=MYSQL, dialect=null, optimizeJoin=true)]}'
+2025-06-17 00:53:52.281 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-06-17 00:53:52.960 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d91241be-1439-4cff-9a10-792051d089df
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-17 00:53:52.968 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-17 00:53:53.108 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5e869b74-421c-49b8-b994-f7401a71ae2c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-17 00:53:53.113 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-17 00:53:53.217 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:53:53.237 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-17 00:53:53.245 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 3.462 seconds (process running for 5.652)
+2025-06-17 00:53:53.248 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 00:53:53.376 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:53:53.380 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-17 00:53:53.391 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-17 00:53:53.406 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-06-17 00:53:53.408 [main] ERROR com.example.demo.Demo1Application - 应用程序启动失败: Failed to start bean 'webServerStartStop'
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:408) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586) ~[spring-context-6.2.7.jar:6.2.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:16) [classes/:?]
+Caused by: org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+	at org.springframework.boot.web.server.PortInUseException.lambda$throwIfPortBindingException$0(PortInUseException.java:71) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.lambda$ifPortBindingException$1(PortInUseException.java:86) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.ifCausedBy(PortInUseException.java:104) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.ifPortBindingException(PortInUseException.java:83) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.throwIfPortBindingException(PortInUseException.java:70) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:250) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:222) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1082) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:219) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1304) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1390) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:644) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1079) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:219) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+2025-06-17 00:55:19.227 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-17 00:55:19.869 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-17 00:55:25.920 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 00:55:26.325 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-17 00:55:26.366 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 38424 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 00:55:26.369 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 00:55:26.370 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 00:55:27.392 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-17 00:55:27.403 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:55:27.404 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-17 00:55:27.404 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-17 00:55:27.453 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-17 00:55:27.453 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1052 ms
+2025-06-17 00:55:27.590 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@22d477c2, overflow=false, maxLimit=null, dbType=MYSQL, dialect=null, optimizeJoin=true)]}'
+2025-06-17 00:55:27.592 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-06-17 00:55:28.401 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9da7c3f3-ea01-41dc-aa2c-3b02fa42cfce
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-17 00:55:28.406 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-17 00:55:28.593 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:55:28.610 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-17 00:55:28.617 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.619 seconds (process running for 3.669)
+2025-06-17 00:55:28.619 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 00:55:45.227 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-17 00:55:45.227 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-17 00:55:45.228 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-17 00:55:45.298 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 00:55:45.298 [http-nio-8080-exec-1] INFO  com.example.demo.service.UserService - 开始用户登录流程: username=user
+2025-06-17 00:55:45.364 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-17 00:55:45.483 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75ff72c9
+2025-06-17 00:55:45.484 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-17 00:55:45.560 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 00:55:45.622 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - JWT token生成成功: username=user, expiryDate=2025-06-18T00:55:45.561+0800
+2025-06-17 00:55:45.623 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 为用户生成登录token: username=user
+2025-06-17 00:55:45.623 [http-nio-8080-exec-1] INFO  com.example.demo.service.UserService - 用户登录成功: username=user, userId=2
+2025-06-17 00:55:45.623 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user
+2025-06-17 00:57:53.605 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 00:57:53.606 [http-nio-8080-exec-5] INFO  com.example.demo.service.UserService - 开始用户登录流程: username=user
+2025-06-17 00:57:53.611 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 00:57:53.612 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - JWT token生成成功: username=user, expiryDate=2025-06-18T00:57:53.611+0800
+2025-06-17 00:57:53.613 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 为用户生成登录token: username=user
+2025-06-17 00:57:53.613 [http-nio-8080-exec-5] INFO  com.example.demo.service.UserService - 用户登录成功: username=user, userId=2
+2025-06-17 00:57:53.613 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user
+2025-06-17 00:58:19.034 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 00:58:19.035 [http-nio-8080-exec-3] INFO  com.example.demo.service.UserService - 开始用户登录流程: username=user
+2025-06-17 00:58:19.039 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 00:58:19.040 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - JWT token生成成功: username=user, expiryDate=2025-06-18T00:58:19.039+0800
+2025-06-17 00:58:19.040 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 为用户生成登录token: username=user
+2025-06-17 00:58:19.040 [http-nio-8080-exec-3] INFO  com.example.demo.service.UserService - 用户登录成功: username=user, userId=2
+2025-06-17 00:58:19.041 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user
+2025-06-17 01:01:58.747 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-17 01:01:59.783 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-17 01:01:59.791 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-17 01:01:59.799 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-17 01:02:06.190 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 01:02:06.626 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-17 01:02:06.657 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 29272 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 01:02:06.660 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 01:02:06.660 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 01:02:07.599 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-17 01:02:07.611 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-17 01:02:07.612 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-17 01:02:07.612 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-17 01:02:07.670 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-17 01:02:07.671 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 983 ms
+2025-06-17 01:02:07.827 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@590d6c76, overflow=false, maxLimit=null, dbType=MYSQL, dialect=null, optimizeJoin=true)]}'
+2025-06-17 01:02:07.828 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-06-17 01:02:08.563 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 83d3fb7b-c784-4d5f-b9f1-ee1120014645
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-17 01:02:08.568 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-17 01:02:08.741 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-17 01:02:08.754 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-17 01:02:08.761 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.503 seconds (process running for 3.539)
+2025-06-17 01:02:08.763 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 01:02:17.308 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-17 01:02:17.308 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-17 01:02:17.309 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-17 01:02:17.367 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:02:17.368 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:02:17.423 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-17 01:02:17.542 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@493ee39b
+2025-06-17 01:02:17.544 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-17 01:02:17.613 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:02:17.613 [http-nio-8080-exec-1] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:02:17.647 [http-nio-8080-exec-1] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:02:17.647 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:02:28.751 [http-nio-8080-exec-2] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:02:28.752 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:02:28.759 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:02:28.759 [http-nio-8080-exec-2] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:02:28.761 [http-nio-8080-exec-2] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:02:28.761 [http-nio-8080-exec-2] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:03:01.505 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:03:01.505 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:03:01.510 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:03:01.511 [http-nio-8080-exec-5] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:03:01.511 [http-nio-8080-exec-5] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:03:01.512 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:05:44.834 [http-nio-8080-exec-8] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:05:44.834 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:05:44.839 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:05:44.839 [http-nio-8080-exec-8] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:05:44.840 [http-nio-8080-exec-8] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:05:44.840 [http-nio-8080-exec-8] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:05:44.869 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 01:05:44.869 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:05:44.884 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T01:05:44.000+0800
+2025-06-17 01:05:44.884 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:05:44.885 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 01:05:44.885 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 01:05:44.885 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 01:05:44.889 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 01:05:44.889 [http-nio-8080-exec-9] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 01:09:11.523 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-17 01:09:12.138 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-17 01:09:12.144 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-17 01:09:12.152 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-17 01:09:19.716 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 01:09:20.044 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-17 01:09:20.083 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 15300 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 01:09:20.085 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 01:09:20.085 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 01:09:21.143 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-17 01:09:21.157 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-17 01:09:21.159 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-17 01:09:21.159 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-17 01:09:21.236 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-17 01:09:21.236 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1116 ms
+2025-06-17 01:09:21.399 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Registered plugin: 'MybatisPlusInterceptor{interceptors=[PaginationInnerInterceptor(logger=org.apache.ibatis.logging.slf4j.Slf4jImpl@5e85c21b, overflow=false, maxLimit=null, dbType=MYSQL, dialect=null, optimizeJoin=true)]}'
+2025-06-17 01:09:21.405 [main] DEBUG com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2025-06-17 01:09:22.251 [main] WARN  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8c4978f7-e970-4e35-9be4-8da40b514173
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-17 01:09:22.259 [main] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-17 01:09:22.491 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-17 01:09:22.514 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-17 01:09:22.524 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.742 seconds (process running for 3.837)
+2025-06-17 01:09:22.528 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 01:09:24.207 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-17 01:09:24.207 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-17 01:09:24.208 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-06-17 01:09:24.335 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-17 01:09:24.500 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59927a07
+2025-06-17 01:09:24.502 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

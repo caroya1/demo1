@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <!-- 控制台输出 -->
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+
+    <!-- 文件输出 - 所有日志 -->
+    <File name="AllFile" fileName="logs/app.log">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </File>
+
+    <!-- 文件输出 - 错误日志 -->
+    <File name="ErrorFile" fileName="logs/error.log">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+      <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+    </File>
+
+    <!-- 滚动文件输出 -->
+    <RollingFile name="RollingFile" fileName="logs/app-rolling.log" filePattern="logs/app-rolling-%d{yyyy-MM-dd}-%i.log.gz">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="10MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="10"/>
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <!-- 特定包的日志级别 -->
+    <Logger name="com.example.demo" level="DEBUG" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="AllFile"/>
+      <AppenderRef ref="ErrorFile"/>
+      <AppenderRef ref="RollingFile"/>
+    </Logger>
+
+    <!-- Spring框架日志 -->
+    <Logger name="org.springframework" level="INFO" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="AllFile"/>
+    </Logger>
+
+    <!-- MyBatis-Plus日志 -->
+    <Logger name="com.baomidou.mybatisplus" level="DEBUG" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="AllFile"/>
+    </Logger>
+
+    <!-- SQL日志 -->
+    <Logger name="com.example.demo.mapper" level="DEBUG" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="AllFile"/>
+    </Logger>
+
+    <!-- Root Logger -->
+    <Root level="INFO">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="AllFile"/>
+      <AppenderRef ref="ErrorFile"/>
+    </Root>
+  </Loggers>
+</Configuration>

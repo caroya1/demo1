@@ -1,0 +1,143 @@
+2025-06-17 00:53:49.664 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 00:53:50.327 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 00:53:50.398 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 41264 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 00:53:50.402 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 00:53:50.404 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 00:53:50.911 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 38472 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 00:53:50.914 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 00:53:50.914 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 00:53:53.245 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 3.462 seconds (process running for 5.652)
+2025-06-17 00:53:53.248 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 00:53:53.408 [main] ERROR com.example.demo.Demo1Application - 应用程序启动失败: Failed to start bean 'webServerStartStop'
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:408) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586) ~[spring-context-6.2.7.jar:6.2.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:16) [classes/:?]
+Caused by: org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+	at org.springframework.boot.web.server.PortInUseException.lambda$throwIfPortBindingException$0(PortInUseException.java:71) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.lambda$ifPortBindingException$1(PortInUseException.java:86) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.ifCausedBy(PortInUseException.java:104) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.ifPortBindingException(PortInUseException.java:83) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.throwIfPortBindingException(PortInUseException.java:70) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:250) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:222) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1082) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:219) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1304) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1390) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:644) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1079) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:219) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+2025-06-17 00:55:25.920 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 00:55:26.366 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 38424 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 00:55:26.369 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 00:55:26.370 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 00:55:28.617 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.619 seconds (process running for 3.669)
+2025-06-17 00:55:28.619 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 00:55:45.298 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 00:55:45.298 [http-nio-8080-exec-1] INFO  com.example.demo.service.UserService - 开始用户登录流程: username=user
+2025-06-17 00:55:45.560 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 00:55:45.622 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - JWT token生成成功: username=user, expiryDate=2025-06-18T00:55:45.561+0800
+2025-06-17 00:55:45.623 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 为用户生成登录token: username=user
+2025-06-17 00:55:45.623 [http-nio-8080-exec-1] INFO  com.example.demo.service.UserService - 用户登录成功: username=user, userId=2
+2025-06-17 00:55:45.623 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user
+2025-06-17 00:57:53.605 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 00:57:53.606 [http-nio-8080-exec-5] INFO  com.example.demo.service.UserService - 开始用户登录流程: username=user
+2025-06-17 00:57:53.611 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 00:57:53.612 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - JWT token生成成功: username=user, expiryDate=2025-06-18T00:57:53.611+0800
+2025-06-17 00:57:53.613 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 为用户生成登录token: username=user
+2025-06-17 00:57:53.613 [http-nio-8080-exec-5] INFO  com.example.demo.service.UserService - 用户登录成功: username=user, userId=2
+2025-06-17 00:57:53.613 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user
+2025-06-17 00:58:19.034 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 00:58:19.035 [http-nio-8080-exec-3] INFO  com.example.demo.service.UserService - 开始用户登录流程: username=user
+2025-06-17 00:58:19.039 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 00:58:19.040 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - JWT token生成成功: username=user, expiryDate=2025-06-18T00:58:19.039+0800
+2025-06-17 00:58:19.040 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 为用户生成登录token: username=user
+2025-06-17 00:58:19.040 [http-nio-8080-exec-3] INFO  com.example.demo.service.UserService - 用户登录成功: username=user, userId=2
+2025-06-17 00:58:19.041 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user
+2025-06-17 01:02:06.190 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 01:02:06.657 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 29272 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 01:02:06.660 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 01:02:06.660 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 01:02:08.761 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.503 seconds (process running for 3.539)
+2025-06-17 01:02:08.763 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 01:02:17.367 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:02:17.368 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:02:17.613 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:02:17.613 [http-nio-8080-exec-1] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:02:17.647 [http-nio-8080-exec-1] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:02:17.647 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:02:28.751 [http-nio-8080-exec-2] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:02:28.752 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:02:28.759 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:02:28.759 [http-nio-8080-exec-2] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:02:28.761 [http-nio-8080-exec-2] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:02:28.761 [http-nio-8080-exec-2] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:03:01.505 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:03:01.505 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:03:01.510 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:03:01.511 [http-nio-8080-exec-5] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:03:01.511 [http-nio-8080-exec-5] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:03:01.512 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:05:44.834 [http-nio-8080-exec-8] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 01:05:44.834 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 01:05:44.839 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 01:05:44.839 [http-nio-8080-exec-8] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 01:05:44.840 [http-nio-8080-exec-8] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:05:44.840 [http-nio-8080-exec-8] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 01:05:44.869 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 01:05:44.869 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:05:44.884 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T01:05:44.000+0800
+2025-06-17 01:05:44.884 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:05:44.885 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 01:05:44.885 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 01:05:44.885 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 01:05:44.889 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 01:05:44.889 [http-nio-8080-exec-9] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 01:09:19.716 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 01:09:20.083 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 15300 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 01:09:20.085 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 01:09:20.085 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 01:09:22.524 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.742 seconds (process running for 3.837)
+2025-06-17 01:09:22.528 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
