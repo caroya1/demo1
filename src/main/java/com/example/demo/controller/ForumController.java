@@ -57,20 +57,27 @@ public class ForumController {
   }
 
   /**
-   * 创建新帖子
+   * 创建新帖子 - 修复支持用户名
    */
   @PostMapping("/posts")
-  public Result<ForumPost> createPost(@RequestBody Map<String, Object> request) {
+  public Result<ForumPost> createPost(@RequestBody Map<String, Object> request, HttpServletRequest httpRequest) {
     try {
       String title = (String) request.get("title");
       String content = (String) request.get("content");
       String imageUrl = (String) request.get("imageUrl");
-      Long authorId = Long.valueOf(request.get("authorId").toString());
 
-      ForumPost post = forumPostService.createPost(title, content, imageUrl, authorId);
+      // 从token获取用户名，而不是依赖前端传递的authorId
+      String username = getUsernameFromToken(httpRequest);
+
+      log.info("开始创建帖子: title={}, username={}", title, username);
+
+      ForumPost post = forumPostService.createPost(title, content, imageUrl, username);
+      log.info("帖子创建成功: postId={}, title={}", post.getId(), post.getTitle());
+
       return Result.success("发布成功", post);
     } catch (Exception e) {
-      return Result.error(e.getMessage());
+      log.error("创建帖子失败: {}", e.getMessage(), e);
+      return Result.error("发布失败: " + e.getMessage());
     }
   }
 

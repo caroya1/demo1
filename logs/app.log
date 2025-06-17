@@ -3898,3 +3898,85 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'infomanagement.recharge_reco
 2025-06-17 16:40:20.562 [http-nio-8080-exec-3] INFO  com.example.demo.controller.ProfileController - 获取充值记录成功: username=user, 记录数量=1
 2025-06-17 16:40:20.562 [http-nio-8080-exec-1] INFO  com.example.demo.controller.ProfileController - 获取用户帖子列表成功: username=user, 帖子数量=4
 2025-06-17 16:40:20.563 [http-nio-8080-exec-10] INFO  com.example.demo.controller.ProfileController - 获取用户预约列表成功: username=user, 预约数量=3
+2025-06-17 18:27:39.338 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 18:27:39.348 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.414 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 18:27:39.424 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.427 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:27:39.427 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 18:27:39.432 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:27:39.551 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:27:39.552 [http-nio-8080-exec-6] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user, balance=600.00
+2025-06-17 18:27:39.861 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.861 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.862 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.865 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.866 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.866 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:27:39.866 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:27:39.868 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:27:39.868 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:27:39.868 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:27:39.868 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:27:39.869 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:27:39.872 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:27:39.872 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:27:39.872 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:27:39.873 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:27:39.873 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:27:39.874 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:27:39.876 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:27:39.876 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:27:39.876 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:27:39.877 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:27:39.880 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:27:39.881 [http-nio-8080-exec-8] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=1, isFavorite=false
+2025-06-17 18:27:39.882 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=6, isFavorite=false
+2025-06-17 18:27:39.882 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=5, isFavorite=true
+2025-06-17 18:27:39.882 [http-nio-8080-exec-5] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=4, isFavorite=false
+2025-06-17 18:27:39.882 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:27:39.883 [http-nio-8080-exec-2] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=2, isFavorite=false
+2025-06-17 18:27:39.886 [http-nio-8080-exec-10] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=3, isFavorite=false
+2025-06-17 18:29:19.102 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 18:29:19.102 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.104 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 18:29:19.104 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.106 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:29:19.106 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 18:29:19.106 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:29:19.109 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:29:19.109 [http-nio-8080-exec-6] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user, balance=600.00
+2025-06-17 18:29:19.304 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.304 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.304 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.305 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.308 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:29:19.308 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:29:19.308 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:29:19.308 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:29:19.308 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:29:19.308 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:29:19.309 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:29:19.309 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.309 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 18:29:19.310 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:29:19.312 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:29:19.313 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:29:19.313 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:29:19.313 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:29:19.314 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 18:29:19.314 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 18:29:19.317 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:29:19.318 [http-nio-8080-exec-8] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=6, isFavorite=false
+2025-06-17 18:29:19.321 [http-nio-8080-exec-5] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=4, isFavorite=false
+2025-06-17 18:29:19.322 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=5, isFavorite=true
+2025-06-17 18:29:19.322 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:29:19.326 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:29:19.328 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 18:29:19.330 [http-nio-8080-exec-2] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=1, isFavorite=false
+2025-06-17 18:29:19.330 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=2, isFavorite=false
+2025-06-17 18:29:19.331 [http-nio-8080-exec-10] DEBUG com.example.demo.controller.ForumController - 检查帖子收藏状态: username=user, postId=3, isFavorite=false
+2025-06-17 18:32:59.830 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-17 18:33:00.329 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-17 18:33:00.369 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-17 18:33:00.392 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

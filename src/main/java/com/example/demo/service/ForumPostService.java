@@ -57,8 +57,38 @@ public class ForumPostService extends ServiceImpl<ForumPostMapper, ForumPost> {
   }
 
   /**
-   * 创建新帖子
+   * 创建新帖子 - 修复支持通过用户名创建
    */
+  @Transactional
+  public ForumPost createPost(String title, String content, String imageUrl, String username) {
+    log.info("开始创建帖子: title={}, username={}", title, username);
+
+    // 根据用户名获取用户ID
+    User user = userService.getUserByUsername(username);
+    if (user == null) {
+      throw new RuntimeException("用户不存在: " + username);
+    }
+
+    ForumPost post = new ForumPost();
+    post.setTitle(title);
+    post.setContent(content);
+    post.setImageUrl(imageUrl);
+    post.setAuthorId(user.getId());
+    post.setViews(0);
+
+    save(post);
+
+    // 设置作者信息用于前端显示
+    post.setAuthor(user.getNickname() != null ? user.getNickname() : user.getUsername());
+
+    log.info("帖子创建成功: postId={}, authorId={}", post.getId(), post.getAuthorId());
+    return post;
+  }
+
+  /**
+   * 创建新帖子 - 保留原有方法以兼容
+   */
+  @Transactional
   public ForumPost createPost(String title, String content, String imageUrl, Long authorId) {
     ForumPost post = new ForumPost();
     post.setTitle(title);
