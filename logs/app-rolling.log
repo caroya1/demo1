@@ -141,3 +141,501 @@ Caused by: java.net.BindException: Address already in use: bind
 2025-06-17 01:09:20.085 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
 2025-06-17 01:09:22.524 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.742 seconds (process running for 3.837)
 2025-06-17 01:09:22.528 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 01:17:01.311 [http-nio-8080-exec-5] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 01:17:01.311 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:01.431 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T01:05:44.000+0800
+2025-06-17 01:17:01.432 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:01.435 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 01:17:01.435 [http-nio-8080-exec-5] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 01:17:01.435 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 01:17:01.462 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 01:17:01.462 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 01:17:25.395 [http-nio-8080-exec-10] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 01:17:25.396 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:25.399 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T01:05:44.000+0800
+2025-06-17 01:17:25.400 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:25.403 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 01:17:25.403 [http-nio-8080-exec-10] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 01:17:25.404 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 01:17:25.407 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 01:17:25.407 [http-nio-8080-exec-10] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 01:17:35.888 [http-nio-8080-exec-1] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 01:17:35.888 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:35.890 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T01:05:44.000+0800
+2025-06-17 01:17:35.891 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:35.892 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 01:17:35.892 [http-nio-8080-exec-1] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 01:17:35.892 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 01:17:35.896 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 01:17:35.896 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 01:17:35.955 [http-nio-8080-exec-4] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 01:17:35.955 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:35.959 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T01:05:44.000+0800
+2025-06-17 01:17:35.959 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:17:35.963 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 01:17:35.963 [http-nio-8080-exec-4] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 01:17:35.963 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 01:17:35.967 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 01:17:35.967 [http-nio-8080-exec-4] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 01:25:31.572 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 01:25:31.574 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 01:25:31.574 [http-nio-8080-exec-2] INFO  com.example.demo.controller.AuthController - 用户退出登录: username=user
+2025-06-17 12:06:44.224 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录请求: username=user
+2025-06-17 12:06:44.229 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 验证用户登录: username=user
+2025-06-17 12:06:44.311 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 用户验证成功: username=user, userId=2
+2025-06-17 12:06:44.312 [http-nio-8080-exec-5] INFO  com.example.demo.config.JwtUtils - 开始生成JWT token: username=user
+2025-06-17 12:06:44.387 [http-nio-8080-exec-5] INFO  com.example.demo.config.JwtUtils - JWT token生成成功: username=user, token前缀=eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:44.387 [http-nio-8080-exec-5] INFO  com.example.demo.controller.AuthController - 用户登录成功: username=user, userId=2
+2025-06-17 12:06:44.418 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:06:44.418 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:44.423 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:06:44.424 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:44.427 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:06:44.427 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:06:44.427 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:06:44.431 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:06:44.431 [http-nio-8080-exec-7] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:06:47.309 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:06:47.309 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:47.312 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:06:47.312 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:47.314 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:06:47.314 [http-nio-8080-exec-9] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:06:47.314 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:06:47.318 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:06:47.318 [http-nio-8080-exec-9] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:06:47.911 [http-nio-8080-exec-4] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:06:47.911 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:47.914 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:06:47.914 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:47.917 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:06:47.918 [http-nio-8080-exec-4] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:06:47.919 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:06:47.923 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:06:47.923 [http-nio-8080-exec-4] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:06:51.066 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:06:51.066 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:51.070 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:06:51.070 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:51.072 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:06:51.072 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:06:51.073 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:06:51.076 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:06:51.076 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:06:51.132 [http-nio-8080-exec-2] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:06:51.133 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:51.135 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:06:51.136 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:06:51.138 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:06:51.138 [http-nio-8080-exec-2] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:06:51.138 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:06:51.142 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:06:51.142 [http-nio-8080-exec-2] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:13:27.948 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:13:27.952 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:13:27.966 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:13:27.967 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:13:27.971 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:13:27.971 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:13:27.972 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:13:27.992 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:13:27.993 [http-nio-8080-exec-7] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:13:43.980 [http-nio-8080-exec-8] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:13:43.980 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:13:43.984 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:13:43.985 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:13:43.987 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:13:43.987 [http-nio-8080-exec-8] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:13:43.988 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:13:43.994 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:13:43.994 [http-nio-8080-exec-8] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:22:23.565 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 12:22:23.972 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 36236 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 12:22:23.975 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 12:22:23.976 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 12:22:26.008 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.375 seconds (process running for 3.577)
+2025-06-17 12:22:26.011 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 12:22:31.509 [http-nio-8080-exec-1] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:22:31.509 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:31.555 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:22:31.555 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:31.557 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:22:31.557 [http-nio-8080-exec-1] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:22:31.557 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:22:31.808 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:22:31.809 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:22:31.933 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:31.937 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:22:31.937 [http-nio-8080-exec-2] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:22:31.937 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:22:31.942 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:22:31.969 [http-nio-8080-exec-2] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=0
+2025-06-17 12:22:34.654 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:34.657 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:22:34.664 [http-nio-8080-exec-9] DEBUG com.example.demo.service.CartService - 添加商品到购物车: username=user, productId=4, quantity=1
+2025-06-17 12:22:34.664 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:22:34.669 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:22:34.706 [http-nio-8080-exec-9] DEBUG com.example.demo.service.CartService - 新增购物车商品: userId=2, productId=4, quantity=1
+2025-06-17 12:22:34.715 [http-nio-8080-exec-9] INFO  com.example.demo.controller.CartController - 添加商品到购物车成功: username=user, productId=4, quantity=1
+2025-06-17 12:22:34.724 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:34.727 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:22:34.727 [http-nio-8080-exec-4] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:22:34.727 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:22:34.731 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:22:34.734 [http-nio-8080-exec-4] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=1
+2025-06-17 12:22:36.357 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:22:36.357 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:36.359 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:22:36.359 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:36.361 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:22:36.361 [http-nio-8080-exec-7] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:22:36.362 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:22:36.366 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:22:36.366 [http-nio-8080-exec-7] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:22:36.414 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:22:36.415 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:36.418 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:22:36.418 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:36.422 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:22:36.422 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:22:36.422 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:22:36.426 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:22:36.426 [http-nio-8080-exec-6] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:22:36.443 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:22:36.446 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:22:36.446 [http-nio-8080-exec-5] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:22:36.446 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:22:36.451 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:22:36.454 [http-nio-8080-exec-5] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=1
+2025-06-17 12:27:51.365 [http-nio-8080-exec-10] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:27:51.365 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:27:51.368 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:27:51.368 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:27:51.370 [http-nio-8080-exec-10] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:27:51.370 [http-nio-8080-exec-10] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:27:51.370 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:27:51.376 [http-nio-8080-exec-10] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:27:51.376 [http-nio-8080-exec-10] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:27:51.405 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:27:51.408 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:27:51.408 [http-nio-8080-exec-2] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:27:51.408 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:27:51.414 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:27:51.417 [http-nio-8080-exec-2] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=1
+2025-06-17 12:28:43.453 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:28:43.453 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:28:43.456 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:28:43.456 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:28:43.460 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:28:43.460 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:28:43.460 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:28:43.464 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:28:43.465 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:28:43.488 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:28:43.492 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:28:43.492 [http-nio-8080-exec-4] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:28:43.492 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:28:43.497 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:28:43.500 [http-nio-8080-exec-4] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=1
+2025-06-17 12:29:39.799 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:29:39.799 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:29:39.802 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:29:39.802 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:29:39.804 [http-nio-8080-exec-6] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:29:39.804 [http-nio-8080-exec-6] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:29:39.804 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:29:39.808 [http-nio-8080-exec-6] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:29:39.809 [http-nio-8080-exec-6] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:29:39.839 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:29:39.842 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:29:39.842 [http-nio-8080-exec-8] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:29:39.842 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:29:39.846 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:29:39.849 [http-nio-8080-exec-8] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=1
+2025-06-17 12:37:50.839 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 12:37:51.239 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 43932 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 12:37:51.241 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 12:37:51.242 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 12:37:53.241 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.329 seconds (process running for 3.453)
+2025-06-17 12:37:53.244 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 12:50:13.295 [http-nio-8080-exec-1] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:50:13.296 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:13.397 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:50:13.397 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:13.398 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:50:13.398 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:50:13.399 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:13.399 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:13.401 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:50:13.401 [http-nio-8080-exec-1] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:50:13.401 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:50:13.402 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:50:13.402 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:50:13.402 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:50:13.941 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:50:13.941 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:50:13.942 [http-nio-8080-exec-1] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:50:13.942 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:50:14.028 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:14.029 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:14.031 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:50:14.031 [http-nio-8080-exec-4] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:50:14.031 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:50:14.031 [http-nio-8080-exec-5] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:50:14.032 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:50:14.039 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:50:14.039 [http-nio-8080-exec-5] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:50:14.046 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:14.046 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:50:14.050 [http-nio-8080-exec-5] INFO  com.example.demo.controller.OrderController - 获取用户订单列表成功: username=user, 订单数量=0
+2025-06-17 12:50:14.050 [http-nio-8080-exec-8] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:50:14.051 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:50:14.051 [http-nio-8080-exec-7] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:50:14.051 [http-nio-8080-exec-7] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:50:14.051 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:50:14.055 [http-nio-8080-exec-4] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=1
+2025-06-17 12:50:14.056 [http-nio-8080-exec-8] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:50:14.059 [http-nio-8080-exec-7] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:50:14.060 [http-nio-8080-exec-8] INFO  com.example.demo.controller.OrderController - 获取用户订单列表成功: username=user, 订单数量=0
+2025-06-17 12:50:14.064 [http-nio-8080-exec-7] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=1
+2025-06-17 12:50:27.119 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 12:50:27.588 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 36136 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 12:50:27.591 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 12:50:27.592 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 12:50:29.632 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 12:50:30.081 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 42632 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 12:50:30.085 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 12:50:30.086 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 12:50:30.911 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 3.721 seconds (process running for 4.739)
+2025-06-17 12:50:30.914 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 12:50:32.226 [main] ERROR com.example.demo.Demo1Application - 应用程序启动失败: Failed to start bean 'webServerStartStop'
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:408) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586) ~[spring-context-6.2.7.jar:6.2.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.example.demo.Demo1Application.main(Demo1Application.java:16) [classes/:?]
+Caused by: org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+	at org.springframework.boot.web.server.PortInUseException.lambda$throwIfPortBindingException$0(PortInUseException.java:71) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.lambda$ifPortBindingException$1(PortInUseException.java:86) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.ifCausedBy(PortInUseException.java:104) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.ifPortBindingException(PortInUseException.java:83) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.server.PortInUseException.throwIfPortBindingException(PortInUseException.java:70) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:250) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:222) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1082) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:219) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:555) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1304) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1390) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:644) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1079) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:219) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:310) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:236) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405) ~[spring-context-6.2.7.jar:6.2.7]
+	... 14 more
+2025-06-17 12:50:47.402 [main] INFO  com.example.demo.Demo1Application - 启动应用程序 Demo1Application
+2025-06-17 12:50:47.710 [main] INFO  com.example.demo.Demo1Application - Starting Demo1Application using Java 17.0.15 with PID 43228 (E:\bigHomework\demo1\target\classes started by yxn in E:\bigHomework\demo1)
+2025-06-17 12:50:47.711 [main] DEBUG com.example.demo.Demo1Application - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-17 12:50:47.712 [main] INFO  com.example.demo.Demo1Application - No active profile set, falling back to 1 default profile: "default"
+2025-06-17 12:50:49.505 [main] INFO  com.example.demo.Demo1Application - Started Demo1Application in 2.051 seconds (process running for 2.84)
+2025-06-17 12:50:49.507 [main] INFO  com.example.demo.Demo1Application - 应用程序启动成功
+2025-06-17 12:51:02.155 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:51:02.203 [http-nio-8080-exec-1] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:51:02.350 [http-nio-8080-exec-1] INFO  com.example.demo.service.OrderService - 开始购物车结算: username=user
+2025-06-17 12:51:02.351 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:02.503 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:02.503 [http-nio-8080-exec-1] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:51:02.503 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:02.504 [http-nio-8080-exec-1] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:02.514 [http-nio-8080-exec-1] ERROR com.example.demo.controller.OrderController - 购物车结算失败: 余额不足，当前余额：100.00，需要支付：399.00
+java.lang.RuntimeException: 余额不足，当前余额：100.00，需要支付：399.00
+	at com.example.demo.service.OrderService.checkoutFromCart(OrderService.java:64) ~[classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.7.jar:6.2.7]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.7.jar:6.2.7]
+	at com.example.demo.service.OrderService$$SpringCGLIB$$0.checkoutFromCart(<generated>) ~[classes/:?]
+	at com.example.demo.controller.OrderController.checkout(OrderController.java:34) ~[classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.0.jar:6.5.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.0.jar:6.5.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) [spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) [spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) [spring-security-config-6.5.0.jar:6.5.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) [spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) [spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-17 12:51:17.234 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:51:17.237 [http-nio-8080-exec-2] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:51:17.239 [http-nio-8080-exec-2] INFO  com.example.demo.service.OrderService - 开始购物车结算: username=user
+2025-06-17 12:51:17.240 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:17.243 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:17.243 [http-nio-8080-exec-2] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:51:17.244 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:17.244 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:17.276 [http-nio-8080-exec-2] INFO  com.example.demo.service.OrderService - 订单创建成功: orderNumber=ORD20250617125117759, totalAmount=399.00
+2025-06-17 12:51:17.292 [http-nio-8080-exec-2] INFO  com.example.demo.service.OrderService - 扣除用户余额: username=user, 扣除金额=399.00, 剩余余额=101.00
+2025-06-17 12:51:17.299 [http-nio-8080-exec-2] DEBUG com.example.demo.service.OrderService - 减少商品库存: productId=4, 减少数量=1, 剩余库存=79
+2025-06-17 12:51:17.300 [http-nio-8080-exec-2] DEBUG com.example.demo.service.CartService - 清空购物车: username=user
+2025-06-17 12:51:17.300 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:17.303 [http-nio-8080-exec-2] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:17.307 [http-nio-8080-exec-2] DEBUG com.example.demo.service.CartService - 清空购物车成功: userId=2
+2025-06-17 12:51:17.308 [http-nio-8080-exec-2] INFO  com.example.demo.service.OrderService - 清空购物车: username=user
+2025-06-17 12:51:17.311 [http-nio-8080-exec-2] INFO  com.example.demo.controller.OrderController - 购物车结算成功: username=user, orderNumber=ORD20250617125117759
+2025-06-17 12:51:17.330 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 收到getUserInfo请求, Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.ey...
+2025-06-17 12:51:17.331 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始验证token有效性, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:51:17.333 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - token验证成功: username=user, expiration=2025-06-18T12:06:44.000+0800
+2025-06-17 12:51:17.334 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:51:17.335 [http-nio-8080-exec-3] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:51:17.336 [http-nio-8080-exec-3] DEBUG com.example.demo.controller.AuthController - 从token解析出用户名: user
+2025-06-17 12:51:17.336 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:17.340 [http-nio-8080-exec-3] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:17.340 [http-nio-8080-exec-3] INFO  com.example.demo.controller.AuthController - 成功获取用户信息: username=user
+2025-06-17 12:51:17.355 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:51:17.357 [http-nio-8080-exec-4] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:51:17.358 [http-nio-8080-exec-4] DEBUG com.example.demo.service.CartService - 获取用户购物车: username=user
+2025-06-17 12:51:17.358 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:17.361 [http-nio-8080-exec-4] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:17.364 [http-nio-8080-exec-4] INFO  com.example.demo.controller.CartController - 获取购物车成功: username=user, 商品数量=0
+2025-06-17 12:51:17.380 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 开始解析token获取用户名, token前缀: eyJhbGciOiJIUzI1NiJ9...
+2025-06-17 12:51:17.382 [http-nio-8080-exec-9] DEBUG com.example.demo.config.JwtUtils - 从token解析出用户名: user
+2025-06-17 12:51:17.382 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 查询用户信息: username=user
+2025-06-17 12:51:17.387 [http-nio-8080-exec-9] DEBUG com.example.demo.service.UserService - 成功找到用户: username=user, userId=2
+2025-06-17 12:51:17.390 [http-nio-8080-exec-9] INFO  com.example.demo.controller.OrderController - 获取用户订单列表成功: username=user, 订单数量=1

@@ -14,9 +14,11 @@ import java.util.List;
 @Mapper
 public interface CartItemMapper extends BaseMapper<CartItem> {
 
-  @Select("SELECT c.*, p.name, p.price, p.image_url, (c.quantity * p.price) as total_price " +
-      "FROM cart_items c " +
-      "LEFT JOIN products p ON c.product_id = p.id " +
-      "WHERE c.user_id = #{userId} ORDER BY c.create_time DESC")
-  List<CartItem> selectUserCartItemsWithDetails(@Param("userId") Long userId);
+  @Select("SELECT ci.*, p.name as productName, p.price as productPrice, p.image_url as productImageUrl, " +
+      "p.stock as productStock " +
+      "FROM cart_items ci " +
+      "LEFT JOIN products p ON ci.product_id = p.id " +
+      "WHERE ci.user_id = #{userId} " +
+      "ORDER BY ci.create_time DESC")
+  List<CartItem> selectCartItemsWithProduct(@Param("userId") Long userId);
 }

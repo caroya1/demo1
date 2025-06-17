@@ -13,6 +13,7 @@ CREATE TABLE users (
     phone VARCHAR(20) COMMENT '电话',
     gender ENUM('male', 'female', 'other') DEFAULT 'other' COMMENT '性别',
     user_type ENUM('user', 'admin') DEFAULT 'user' COMMENT '用户类型',
+    balance DECIMAL(10,2) DEFAULT 0.00 COMMENT '账户余额',
     create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
 ) COMMENT '用户表';
@@ -95,11 +96,42 @@ CREATE TABLE cart_items (
     UNIQUE KEY unique_cart_item (user_id, product_id)
 ) COMMENT '购物车表';
 
+-- 订单表
+CREATE TABLE orders (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    order_number VARCHAR(32) UNIQUE NOT NULL COMMENT '订单号',
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    total_amount DECIMAL(10,2) NOT NULL COMMENT '订单总金额',
+    status ENUM('pending', 'paid', 'shipped', 'completed', 'cancelled') DEFAULT 'pending' COMMENT '订单状态',
+    payment_method VARCHAR(20) DEFAULT 'balance' COMMENT '支付方式',
+    shipping_address TEXT COMMENT '收货地址',
+    remark TEXT COMMENT '订单备注',
+    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    FOREIGN KEY (user_id) REFERENCES users(id)
+) COMMENT '订单表';
+
+-- 订单项表
+CREATE TABLE order_items (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    order_id BIGINT NOT NULL COMMENT '订单ID',
+    product_id BIGINT NOT NULL COMMENT '商品ID',
+    product_name VARCHAR(200) NOT NULL COMMENT '商品名称',
+    product_price DECIMAL(10,2) NOT NULL COMMENT '商品单价',
+    product_image_url VARCHAR(500) COMMENT '商品图片URL',
+    quantity INT NOT NULL COMMENT '商品数量',
+    subtotal DECIMAL(10,2) NOT NULL COMMENT '小计金额',
+    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+) COMMENT '订单项表';
+
 -- 插入测试数据
--- 用户数据 - 使用明文密码
-INSERT INTO users (username, password, nickname, email, user_type) VALUES 
-('admin', 'admin123', '管理员', 'admin@example.com', 'admin'),
-('test_user', 'test123', '测试用户', 'test@example.com', 'user');
+-- 用户数据 - 使用明文密码，添加初始余额
+INSERT INTO users (username, password, nickname, email, user_type, balance) VALUES 
+('admin', 'admin123', '管理员', 'admin@example.com', 'admin', 10000.00),
+('user', 'user123', '普通用户', 'user@example.com', 'user', 5000.00),
+('test_user', 'test123', '测试用户', 'test@example.com', 'user', 3000.00);
 
 -- 论坛帖子数据
 INSERT INTO forum_posts (title, content, author_id, views, image_url) VALUES 

@@ -26,14 +26,26 @@ public class CartItem {
 
   // 非数据库字段，用于展示商品信息
   @TableField(exist = false)
-  private String name;
+  private String productName;
 
   @TableField(exist = false)
-  private BigDecimal price;
+  private BigDecimal productPrice;
 
   @TableField(exist = false)
-  private String imageUrl;
+  private String productImageUrl;
 
+  @TableField(exist = false)
+  private Integer productStock;
+
+  // 计算属性：商品总价
   @TableField(exist = false)
   private BigDecimal totalPrice;
+
+  // 获取商品总价
+  public BigDecimal getTotalPrice() {
+    if (productPrice != null && quantity != null) {
+      return productPrice.multiply(BigDecimal.valueOf(quantity));
+    }
+    return BigDecimal.ZERO;
+  }
 }

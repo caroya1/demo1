@@ -24,7 +24,7 @@ public class CartItemService extends ServiceImpl<CartItemMapper, CartItem> {
    * 获取用户购物车
    */
   public List<CartItem> getUserCart(Long userId) {
-    return baseMapper.selectUserCartItemsWithDetails(userId);
+    return baseMapper.selectCartItemsWithProduct(userId);
   }
 
   /**

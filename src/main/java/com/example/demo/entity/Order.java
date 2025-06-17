@@ -6,22 +6,24 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
- * 用户实体类
+ * 订单实体类
  */
 @Data
-@TableName("users")
-public class User {
+@TableName("orders")
+public class Order {
   @TableId(type = IdType.AUTO)
   private Long id;
 
-  private String username;
-  private String password;
-  private String nickname;
-  private String email;
-  private String phone;
-  private String gender;
-  private String userType;
-  private BigDecimal balance; // 添加余额字段
+  private String orderNumber;
+  private Long userId;
+  private BigDecimal totalAmount;
+
+  @TableField("status")
+  private String status; // pending, paid, shipped, completed, cancelled
+
+  private String paymentMethod;
+  private String shippingAddress;
+  private String remark;
 
   @TableField(fill = FieldFill.INSERT)
   private LocalDateTime createTime;
