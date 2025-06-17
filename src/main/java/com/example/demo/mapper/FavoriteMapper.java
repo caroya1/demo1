@@ -16,19 +16,31 @@ public interface FavoriteMapper extends BaseMapper<Favorite> {
 
   @Select("SELECT f.*, " +
       "CASE " +
-      "  WHEN f.post_type = 'forum' THEN (SELECT title FROM forum_posts WHERE id = f.post_id) " +
-      "  WHEN f.post_type = 'learning' THEN (SELECT title FROM learning_activities WHERE id = f.post_id) " +
+      "  WHEN f.post_type = 'forum' THEN fp.title " +
+      "  WHEN f.post_type = 'learning' THEN la.title " +
+      "  ELSE '未知标题' " +
       "END as title, " +
       "CASE " +
-      "  WHEN f.post_type = 'forum' THEN (SELECT u.nickname FROM forum_posts fp LEFT JOIN users u ON fp.author_id = u.id WHERE fp.id = f.post_id) "
-      +
-      "  WHEN f.post_type = 'learning' THEN (SELECT u.nickname FROM learning_activities la LEFT JOIN users u ON la.author_id = u.id WHERE la.id = f.post_id) "
-      +
+      "  WHEN f.post_type = 'forum' THEN u1.nickname " +
+      "  WHEN f.post_type = 'learning' THEN u2.nickname " +
+      "  ELSE '未知作者' " +
       "END as author, " +
       "CASE " +
-      "  WHEN f.post_type = 'forum' THEN (SELECT views FROM forum_posts WHERE id = f.post_id) " +
-      "  WHEN f.post_type = 'learning' THEN (SELECT views FROM learning_activities WHERE id = f.post_id) " +
-      "END as views " +
-      "FROM favorites f WHERE f.user_id = #{userId} ORDER BY f.create_time DESC")
+      "  WHEN f.post_type = 'forum' THEN fp.views " +
+      "  WHEN f.post_type = 'learning' THEN la.views " +
+      "  ELSE 0 " +
+      "END as views, " +
+      "CASE " +
+      "  WHEN f.post_type = 'forum' THEN fp.create_time " +
+      "  WHEN f.post_type = 'learning' THEN la.create_time " +
+      "  ELSE f.create_time " +
+      "END as post_create_time " +
+      "FROM favorites f " +
+      "LEFT JOIN forum_posts fp ON f.post_type = 'forum' AND f.post_id = fp.id " +
+      "LEFT JOIN learning_activities la ON f.post_type = 'learning' AND f.post_id = la.id " +
+      "LEFT JOIN users u1 ON fp.author_id = u1.id " +
+      "LEFT JOIN users u2 ON la.author_id = u2.id " +
+      "WHERE f.user_id = #{userId} " +
+      "ORDER BY f.create_time DESC")
   List<Favorite> selectUserFavoritesWithDetails(@Param("userId") Long userId);
 }

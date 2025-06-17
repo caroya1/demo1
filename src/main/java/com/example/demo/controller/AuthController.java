@@ -9,6 +9,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.*;
 
 import jakarta.servlet.http.HttpServletRequest;
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -74,8 +75,9 @@ public class AuthController {
       loginResult.put("nickname", user.getNickname() != null ? user.getNickname() : user.getUsername());
       loginResult.put("email", user.getEmail());
       loginResult.put("userType", user.getUserType());
+      loginResult.put("balance", user.getBalance() != null ? user.getBalance() : BigDecimal.ZERO); // 添加余额字段
 
-      log.info("用户登录成功: username={}, userId={}", username, user.getId());
+      log.info("用户登录成功: username={}, userId={}, balance={}", username, user.getId(), user.getBalance());
       return Result.success("登录成功", loginResult);
     } catch (Exception e) {
       log.error("用户登录失败: username={}, error={}", request.get("username"), e.getMessage(), e);
@@ -132,8 +134,9 @@ public class AuthController {
       userInfo.put("phone", user.getPhone());
       userInfo.put("gender", user.getGender());
       userInfo.put("userType", user.getUserType());
+      userInfo.put("balance", user.getBalance() != null ? user.getBalance() : BigDecimal.ZERO); // 添加余额字段
 
-      log.info("成功获取用户信息: username={}", username);
+      log.info("成功获取用户信息: username={}, balance={}", username, user.getBalance());
       return Result.success("获取用户信息成功", userInfo);
     } catch (Exception e) {
       log.error("获取用户信息失败: {}", e.getMessage(), e);

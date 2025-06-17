@@ -3,13 +3,18 @@ package com.example.demo.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.demo.config.JwtUtils;
+import com.example.demo.entity.RechargeRecord;
 import com.example.demo.entity.User;
+import com.example.demo.mapper.RechargeRecordMapper;
 import com.example.demo.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -21,6 +26,7 @@ import java.util.Map;
 public class UserService extends ServiceImpl<UserMapper, User> {
 
   private final JwtUtils jwtUtils;
+  private final RechargeRecordMapper rechargeRecordMapper;
 
   /**
    * 用户注册 - 重新设计
@@ -125,5 +131,83 @@ public class UserService extends ServiceImpl<UserMapper, User> {
 
     updateById(user);
     log.info("用户信息更新成功: userId={}, username={}", userId, user.getUsername());
+  }
+
+  /**
+   * 获取用户发布的帖子
+   */
+  public List<Map<String, Object>> getUserPosts(String username) {
+    log.debug("获取用户发布的帖子: username={}", username);
+
+    User user = getUserByUsername(username);
+    if (user == null) {
+      throw new RuntimeException("用户不存在");
+    }
+
+    return baseMapper.selectUserPosts(user.getId());
+  }
+
+  /**
+   * 获取用户的预约记录
+   */
+  public List<Map<String, Object>> getUserReservations(String username) {
+    log.debug("获取用户预约记录: username={}", username);
+
+    User user = getUserByUsername(username);
+    if (user == null) {
+      throw new RuntimeException("用户不存在");
+    }
+
+    return baseMapper.selectUserReservations(user.getId());
+  }
+
+  /**
+   * 充值余额
+   */
+  @Transactional
+  public void recharge(String username, BigDecimal amount, String paymentMethod) {
+    log.info("开始充值操作: username={}, amount={}, paymentMethod={}", username, amount, paymentMethod);
+
+    if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
+      throw new RuntimeException("充值金额必须大于0");
+    }
+
+    User user = getUserByUsername(username);
+    if (user == null) {
+      throw new RuntimeException("用户不存在");
+    }
+
+    // 更新用户余额
+    BigDecimal newBalance = (user.getBalance() != null ? user.getBalance() : BigDecimal.ZERO).add(amount);
+    user.setBalance(newBalance);
+    updateById(user);
+
+    // 记录充值记录
+    RechargeRecord record = new RechargeRecord();
+    record.setUserId(user.getId());
+    record.setAmount(amount);
+    record.setPaymentMethod(paymentMethod);
+    record.setStatus("success");
+    record.setTransactionId("TXN" + System.currentTimeMillis());
+    record.setRemark("用户充值");
+
+    rechargeRecordMapper.insert(record);
+
+    log.info("充值成功: username={}, 原余额={}, 充值金额={}, 新余额={}",
+        username, user.getBalance().subtract(amount), amount, newBalance);
+  }
+
+  /**
+   * 获取用户充值记录
+   */
+  public List<Map<String, Object>> getRechargeHistory(String username) {
+    log.debug("获取用户充值记录: username={}", username);
+
+    User user = getUserByUsername(username);
+    if (user == null) {
+      throw new RuntimeException("用户不存在");
+    }
+
+    return rechargeRecordMapper.selectUserRechargeHistory(user.getId());
   }
 }

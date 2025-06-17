@@ -1,18 +1,28 @@
 package com.example.demo.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.demo.entity.Favorite;
 import com.example.demo.entity.ForumPost;
+import com.example.demo.entity.User;
+import com.example.demo.mapper.FavoriteMapper;
 import com.example.demo.mapper.ForumPostMapper;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 论坛帖子服务类
  */
 @Service
 @RequiredArgsConstructor
+@Log4j2
 public class ForumPostService extends ServiceImpl<ForumPostMapper, ForumPost> {
+
+  private final FavoriteMapper favoriteMapper;
+  private final UserService userService;
 
   /**
    * 分页获取论坛帖子列表
@@ -59,5 +69,97 @@ public class ForumPostService extends ServiceImpl<ForumPostMapper, ForumPost> {
 
     save(post);
     return post;
+  }
+
+  /**
+   * 添加帖子收藏
+   */
+  @Transactional
+  public void addFavorite(String username, Long postId) {
+    log.debug("添加帖子收藏: username={}, postId={}", username, postId);
+
+    User user = userService.getUserByUsername(username);
+    if (user == null) {
+      throw new RuntimeException("用户不存在");
+    }
+
+    // 检查帖子是否存在
+    ForumPost post = getById(postId);
+    if (post == null) {
+      throw new RuntimeException("帖子不存在");
+    }
+
+    // 检查是否已收藏
+    QueryWrapper<Favorite> queryWrapper = new QueryWrapper<>();
+    queryWrapper.eq("user_id", user.getId())
+        .eq("post_id", postId)
+        .eq("post_type", "forum");
+
+    if (favoriteMapper.selectCount(queryWrapper) > 0) {
+      throw new RuntimeException("已收藏过此帖子");
+    }
+
+    // 创建收藏记录
+    Favorite favorite = new Favorite();
+    favorite.setUserId(user.getId());
+    favorite.setPostId(postId);
+    favorite.setPostType("forum");
+
+    favoriteMapper.insert(favorite);
+    log.debug("帖子收藏添加成功: favoriteId={}", favorite.getId());
+  }
+
+  /**
+   * 移除帖子收藏
+   */
+  @Transactional
+  public void removeFavorite(String username, Long postId) {
+    log.debug("移除帖子收藏: username={}, postId={}", username, postId);
+
+    User user = userService.getUserByUsername(username);
+    if (user == null) {
+      throw new RuntimeException("用户不存在");
+    }
+
+    QueryWrapper<Favorite> queryWrapper = new QueryWrapper<>();
+    queryWrapper.eq("user_id", user.getId())
+        .eq("post_id", postId)
+        .eq("post_type", "forum");
+
+    int deleted = favoriteMapper.delete(queryWrapper);
+    if (deleted == 0) {
+      throw new RuntimeException("未找到收藏记录");
+    }
+
+    log.debug("帖子收藏移除成功: userId={}, postId={}", user.getId(), postId);
+  }
+
+  /**
+   * 检查帖子是否已收藏
+   */
+  public boolean isFavorite(String username, Long postId) {
+    User user = userService.getUserByUsername(username);
+    if (user == null) {
+      return false;
+    }
+
+    QueryWrapper<Favorite> queryWrapper = new QueryWrapper<>();
+    queryWrapper.eq("user_id", user.getId())
+        .eq("post_id", postId)
+        .eq("post_type", "forum");
+
+    return favoriteMapper.selectCount(queryWrapper) > 0;
+  }
+
+  /**
+   * 更新浏览量
+   */
+  public void updateViews(Long postId) {
+    ForumPost post = getById(postId);
+    if (post != null) {
+      post.setViews(post.getViews() + 1);
+      updateById(post);
+      log.debug("帖子浏览量更新: postId={}, newViews={}", postId, post.getViews());
+    }
   }
 }
